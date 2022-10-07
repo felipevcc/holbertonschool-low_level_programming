@@ -2,7 +2,7 @@
 /**
  * main - Prints only a text
  * Description: This function does to print the text
- * Return: 0
+ * Return: 1
  */
 int main(void)
 {
