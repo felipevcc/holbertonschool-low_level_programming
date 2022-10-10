@@ -20,12 +20,15 @@ int main(void)
 		for (num2 = '1'; num <= '9'; num2++)
 		{		
 			if (num != num2 && num < num2)
+			{
 				putchar(num); 
 				putchar(num2);
-			
+			}
 			if (val == 1)
+			{
 				putchar(',');
 				putchar(' ');
+			}
 		}
 	}
 
