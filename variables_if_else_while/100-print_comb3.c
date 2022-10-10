@@ -17,7 +17,7 @@ int main(void)
 		if (num == '8')
 			val = 0;
 
-		for (num2 = '1'; num <= '9')
+		for (num2 = '1'; num <= '9'; num2++)
 		{		
 			if (num != num2 && num < num2)
 				putchar(num); 
