@@ -14,7 +14,8 @@ int main(void)
 	{
 		putchar(num);
 		if (num != '9')
-			printf(", ");
+			putchar(',');
+			putchar(' ');
 	}
 
 	putchar('\n');
