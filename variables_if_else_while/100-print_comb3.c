@@ -22,6 +22,7 @@ int main(void)
 			if (num != num2 && num < num2)
 				putchar(num); 
 				putchar(num2);
+			
 			if (val == 1)
 				putchar(',');
 				putchar(' ');
