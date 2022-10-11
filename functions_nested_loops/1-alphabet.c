@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - prints th alphabet in lowercase
+ * print_alphabet - prints th alphabet in lowercase
  *
  * Return: 0
  */
 
-int main(void)
+int print_alphabet(void)
 {
 	char letter;
 	
