@@ -13,7 +13,7 @@ int main(void)
 	int i;
 	int size;
 
-	size = strlen(word)
+	size = strlen(word);
 
 	for (i = 0; i < size; i++)
 	{
