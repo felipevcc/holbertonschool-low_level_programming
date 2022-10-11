@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - numbers conditionals
+ * print_sign - numbers conditionals
  * @n: character check
  *
  * Return: 0 or 1
