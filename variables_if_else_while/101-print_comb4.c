@@ -8,25 +8,25 @@
 
 int main(void)
 {
-	int num;
-	int num2;
-	int num3;
+	int n;
+	int n2;
+	int n3;
 	int val = 1;
 
-	for (num = '0'; num <= '7'; num++)
+	for (n = '0'; n <= '7'; n++)
 	{
-		if (num == '7')
+		if (n == '7')
 			val = 0;
 
-		for (num2 = '1'; num2 <= '8'; num2++)
-		{ 
-			for (num3 = '2'; num3 <= '9'; num3++)
+		for (n2 = '1'; n2 <= '8'; n2++)
+		{
+			for (n3 = '2'; n3 <= '9'; n3++)
 			{
-				if (num != num2 && num != num3 && num2 != num3 && num < num2 && num2 < num3)
+				if (n != n2 && n != n3 && n2 != n3 && n < n2 && n2 < n3)
 				{
-					putchar(num);
-					putchar(num2);
-					putchar(num3);
+					putchar(n);
+					putchar(n2);
+					putchar(n3);
 
 					if (val == 1)
 					{
