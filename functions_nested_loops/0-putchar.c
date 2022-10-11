@@ -10,13 +10,13 @@
 int main(void)
 {
 	char word[] = "_putchar";
-	int i;
+	char i;
 
 	for (i = '0'; i < strlen(word); i++)
 	{
 		putchar(word[i]);
 	}
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
