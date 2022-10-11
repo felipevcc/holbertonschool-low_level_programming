@@ -18,10 +18,10 @@ int main(void)
 			val = 0;
 
 		for (num2 = '1'; num2 <= '9'; num2++)
-		{		
+		{
 			if (num != num2 && num < num2)
 			{
-				putchar(num); 
+				putchar(num);
 				putchar(num2);
 
 				if (val == 1)
