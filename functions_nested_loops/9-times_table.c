@@ -21,10 +21,8 @@ void times_table(void)
 			_putchar((n * column) + '0');
 			_putchar(',');
 			_putchar(' ');
-			n++;
 		}
 
-		n = 0;
 		_putchar('\n');
 	}
 }
