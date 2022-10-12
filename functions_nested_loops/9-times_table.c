@@ -34,24 +34,14 @@ void times_table(void)
 			{
 				_putchar((num_result) + '0');
 			}
-			else 
+			else
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar((num_result) + '0');	
+				_putchar((num_result) + '0');
 			}
-			/*
-			if (column != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				if (num_result < 10)
-					_putchar(' ');
-			} 
-			*/
 		}
-
 		n++;
 		_putchar('\n');
 	}
