@@ -25,14 +25,23 @@ void times_table(void)
 
 			if (num_result > 9)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar((num_result / 10) + '0');
-				_putchar ((num_result % 10) + '0');
+				_putchar((num_result % 10) + '0');
+			}
+			else if (column == 0)
+			{
+				_putchar((num_result) + '0');
 			}
 			else 
 			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar((num_result) + '0');	
 			}
-
+			/*
 			if (column != 9)
 			{
 				_putchar(',');
@@ -40,6 +49,7 @@ void times_table(void)
 				if (num_result < 10)
 					_putchar(' ');
 			} 
+			*/
 		}
 
 		n++;
