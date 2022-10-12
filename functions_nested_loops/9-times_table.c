@@ -21,7 +21,7 @@ void times_table(void)
 		{
 			int num_result;
 
-			num_result = n * column
+			num_result = n * column;
 			_putchar((num_result) + '0');
 
 			if (num_result > 9)
