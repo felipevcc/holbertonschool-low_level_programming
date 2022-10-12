@@ -12,11 +12,11 @@ void times_table(void)
 	int column;
 	int n;
 
-	for (line == 0; line <= 9; line++)
+	for (line = 0; line <= 9; line++)
 	{
 		n = 0;
 
-		for (column == 0; column <= 9; column++)
+		for (column = 0; column <= 9; column++)
 		{
 			_putchar((n * column) + '0');
 			_putchar(',');
