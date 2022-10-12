@@ -12,9 +12,10 @@ void times_table(void)
 	int column;
 	int n;
 
+	n = 0;
+
 	for (line = 0; line <= 9; line++)
 	{
-		n = 0;
 
 		for (column = 0; column <= 9; column++)
 		{
