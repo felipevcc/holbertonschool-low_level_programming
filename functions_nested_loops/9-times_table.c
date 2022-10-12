@@ -20,8 +20,13 @@ void times_table(void)
 		for (column = 0; column <= 9; column++)
 		{
 			_putchar((n * column) + '0');
-			_putchar(',');
-			_putchar(' ');
+			
+			if (column != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 		}
 		
 		n++;
