@@ -22,12 +22,15 @@ void times_table(void)
 			int num_result;
 
 			num_result = n * column;
-			_putchar((num_result) + '0');
 
 			if (num_result > 9)
 			{
 				_putchar((num_result / 10) + '0');
 				_putchar ((num_result % 10) + '0');
+			}
+			else 
+			{
+				_putchar((num_result) + '0');	
 			}
 
 			if (column != 9)
