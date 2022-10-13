@@ -3,6 +3,8 @@
 /**
  * _isupper - upper
  *
+ * @c: character var
+ *
  * Return: 0 or 1
  */
 
