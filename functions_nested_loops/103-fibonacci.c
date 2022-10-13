@@ -14,7 +14,7 @@ int main(void)
 	long sum = n1 + n2;
 	int i;
 
-	while (sum < 4000000)
+	while (sum < 3999998)
 	{
 		last_n = n1 + n2;
 		if (last_n % 2 == 0)
