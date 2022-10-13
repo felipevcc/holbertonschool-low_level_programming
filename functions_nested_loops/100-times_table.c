@@ -27,19 +27,19 @@ void print_times_table(int n)
 			_putchar(',');
 			_putchar(' ');
 
-			if (num_result > 9 && num_result < 100)
+			if (num_result > 9 && num_result < 100 && column != 0)
 			{
 				_putchar(' ');
 				_putchar((num_result / 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
-			else if (num_result > 99)
+			else if (num_result > 99 && column != 0)
 			{
 				_putchar(((num_result / 10) / 10) + '0');
 				_putchar(((num_result / 10) % 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
-			else if (num_result <= 9 && num_result != 0)
+			else if (num_result <= 9 && column != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
