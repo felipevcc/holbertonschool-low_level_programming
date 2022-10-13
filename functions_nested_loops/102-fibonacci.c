@@ -20,7 +20,8 @@ int main(void)
 		last_n = n1 + n2;
 		n1 = n2;
 		n2 = last_n;
-		printf("%d", last_n);
+		if (i == 47)
+			printf("%d, ", last_n);
 		i++;
 	}
 
