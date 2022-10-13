@@ -3,7 +3,7 @@
 /**
  * main - prints multiples of 3 and 5
  *
- * Return: result
+ * Return: 0
  */
 
 int main(void)
