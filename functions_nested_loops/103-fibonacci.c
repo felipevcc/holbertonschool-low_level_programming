@@ -11,10 +11,10 @@ int main(void)
 	long n1 = 2;
 	long n2 = 8;
 	long last_n;
-	long sum = n1 + n2;
+	long sum;
 	int i;
 
-	while (sum < 3999998)
+	while (sum < 4000000)
 	{
 		last_n = n1 + n2;
 		if (last_n % 2 == 0)
