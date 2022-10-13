@@ -10,7 +10,7 @@ int main(void)
 {
 	int n1 = 1;
 	int n2 = 2;
-	
+	int last_n;
 	int i;
 
 	printf("%d, %d", n1, n2);
