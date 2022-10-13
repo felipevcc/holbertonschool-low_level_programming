@@ -23,8 +23,7 @@ void print_times_table(int n)
 
 			if (column == 0)
 				_putchar(num_result + '0');
-				continue;
-
+	
 			_putchar(',');
 			_putchar(' ');
 
@@ -40,7 +39,7 @@ void print_times_table(int n)
 				_putchar(((num_result / 10) % 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
-			else
+			else if (num_result <= 9 && num_result != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
