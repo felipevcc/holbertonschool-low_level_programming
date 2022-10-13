@@ -4,8 +4,10 @@
 /**
  * add - add numbers
  *
- * n1: number 1
- * n2: number 2
+ * @n1: number 1
+ * @n2: number 2
+ *
+ * Return: result add
  */
 
 int add(int n1, int n2)
