@@ -31,9 +31,17 @@ void print_times_table(int n)
 				_putchar((num_result / 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
+			else if (num_result > 99)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(((num_result / 10) / 10) + '0');
+				_putchar((num_result / 10) + '0');
+				_putchar((num_result % 10) + '0');
+			}
 			else if (column == 0)
 			{
-				_putchar((num_result) + '0');
+				_putchar(num_result + '0');
 			}
 			else
 			{
@@ -41,7 +49,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar((num_result) + '0');
+				_putchar(num_result + '0');
 			}
 		}
 		num++;
