@@ -12,6 +12,7 @@ void print_times_table(int n)
 	int line;
 	int column;
 	int num = 0;
+
 	for (line = 0; line <= n; line++)
 	{
 		if (n > 15 || n < 0)
@@ -19,11 +20,11 @@ void print_times_table(int n)
 		for (column = 0; column <= n; column++)
 		{
 			int num_result = num * column;
+
 			if (num_result > 9 && num_result < 100)
 			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				printf("  ");
 				_putchar((num_result / 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
@@ -42,9 +43,7 @@ void print_times_table(int n)
 			else
 			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
+				printf("   ");
 				_putchar(num_result + '0');
 			}
 		}
