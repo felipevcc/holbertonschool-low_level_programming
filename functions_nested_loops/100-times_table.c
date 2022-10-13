@@ -40,7 +40,15 @@ void print_times_table(int n)
 			else if (column == 0)
 			{
 				_putchar(num_result + '0');
-			}	
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(num_result + '0');
+			}
 		}
 		num++;
 		_putchar('\n');
