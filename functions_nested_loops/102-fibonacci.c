@@ -23,7 +23,7 @@ int main(void)
 		if (i != 47)
 			printf("%d, ", last_n);
 		else
-			printf("%d\n", last_n)
+			printf("%d\n", last_n);
 		i++;
 	}
 
