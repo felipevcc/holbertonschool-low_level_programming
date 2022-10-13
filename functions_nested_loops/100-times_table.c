@@ -23,7 +23,11 @@ void print_times_table(int n)
 
 			num_result = num * column;
 
-			if (num_result > 9 && num_result < 100)
+			if (n > 15 || n < 0)
+			{
+				_putchar('');
+			}
+			else if (num_result > 9 && num_result < 100)
 			{
 				_putchar(',');
 				_putchar(' ');
