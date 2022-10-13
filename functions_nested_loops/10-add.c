@@ -15,7 +15,7 @@ int add(int n1, int n2)
 	
 	add = n1 + n2;
 
-	while (add != 0)
+	while (add > 0)
 	{
 		add /= 10;
 		counter++;
