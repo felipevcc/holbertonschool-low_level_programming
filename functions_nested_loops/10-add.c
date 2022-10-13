@@ -18,7 +18,8 @@ int add(int n1, int n2)
 
 	while (add > 0)
 	{
-		add = add / 10;
+		printf("add = %d", add);
+		add = add / 10;	
 		counter++;
 	}
 	
