@@ -11,7 +11,7 @@ int main(void)
 	long n1 = 2;
 	long n2 = 8;
 	long last_n;
-	long sum = n1 + n2;
+	long sum;
 	int i;
 
 	while (sum < 4000000)
