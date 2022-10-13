@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_times_table - prints tables n
@@ -25,7 +26,7 @@ void print_times_table(int n)
 
 			if (n > 15 || n < 0)
 			{
-				_putchar('');
+				printf("");
 			}
 			else if (num_result > 9 && num_result < 100)
 			{
