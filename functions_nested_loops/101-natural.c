@@ -10,15 +10,15 @@ int main(void)
 {
 	int result;
 	int i;
-	
+
 	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 			result += i;
 		i++;
 	}
-	
+
 	printf("%d\n", result);
 
-	return (result);
+	return (0);
 }
