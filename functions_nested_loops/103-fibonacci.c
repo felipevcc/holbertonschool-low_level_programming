@@ -23,7 +23,7 @@ int main(void)
 			n2 = last_n;
 			sum += last_n;
 		}
-		i++
+		i++;
 	}
 	printf("%ld\n", sum);
 	return (0);
