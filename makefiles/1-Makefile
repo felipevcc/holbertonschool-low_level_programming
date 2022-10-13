@@ -1,0 +1,13 @@
+# Make
+# Make clean
+
+.PHONY = all
+
+CC = gcc
+SRC = $(wildcard *.c)
+
+all: school
+
+school: 
+	$(CC) $(SRC) -o school
+
