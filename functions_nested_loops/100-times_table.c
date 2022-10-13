@@ -21,30 +21,28 @@ void print_times_table(int n)
 		{
 			int num_result = num * column;
 
+			else if (column == 0)
+			{
+				_putchar(num_result + '0');
+				continue;
+			}
+			_putchar(',');
+			_putchar(' ');
+
 			if (num_result > 9 && num_result < 100)
 			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 				_putchar((num_result / 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
 			else if (num_result > 99)
 			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar(((num_result / 10) / 10) + '0');
 				_putchar(((num_result / 10) % 10) + '0');
 				_putchar((num_result % 10) + '0');
-			}
-			else if (column == 0)
-			{
-				_putchar(num_result + '0');
-			}
+			}			
 			else
 			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(num_result + '0');
