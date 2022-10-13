@@ -23,15 +23,13 @@ void print_times_table(int n)
 
 			if (num_result > 9 && num_result < 100)
 			{
-				_putchar(',');
-				printf("  ");
+				printf(",  ");
 				_putchar((num_result / 10) + '0');
 				_putchar((num_result % 10) + '0');
 			}
 			else if (num_result > 99)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ")
 				_putchar(((num_result / 10) / 10) + '0');
 				_putchar(((num_result / 10) % 10) + '0');
 				_putchar((num_result % 10) + '0');
@@ -42,8 +40,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar(',');
-				printf("   ");
+				printf(",   ");
 				_putchar(num_result + '0');
 			}
 		}
