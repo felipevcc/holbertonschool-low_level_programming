@@ -29,7 +29,7 @@ void print_times_table(int n)
 			}
 			else if (num_result > 99)
 			{
-				printf(", ")
+				printf(", ");
 				_putchar(((num_result / 10) / 10) + '0');
 				_putchar(((num_result / 10) % 10) + '0');
 				_putchar((num_result % 10) + '0');
