@@ -23,4 +23,6 @@ int main(void)
 		printf("%d", last_n);
 		i++;
 	}
+
+	return (0);
 }
