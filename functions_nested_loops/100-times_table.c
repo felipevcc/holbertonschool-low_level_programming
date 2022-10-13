@@ -21,7 +21,7 @@ void print_times_table(int n)
 		{
 			int num_result = num * column;
 
-			else if (column == 0)
+			if (column == 0)
 			{
 				_putchar(num_result + '0');
 				continue;
