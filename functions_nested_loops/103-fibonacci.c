@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long n1 = 2;
-	long n2 = 8;
+	long n1 = 0;
+	long n2 = 2;
 	long last_n;
 	long sum;
 	int i;
