@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	int n1 = 1;
-	int n2 = 2;
+	unsigned int n1 = 1;
+	unsigned int n2 = 2;
 	unsigned int last_n;
 	int i;
 
