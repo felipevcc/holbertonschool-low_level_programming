@@ -6,7 +6,7 @@
  * Return: result
  */
 
-void main(void)
+int main(void)
 {
 	int result;
 	int i;
@@ -17,6 +17,8 @@ void main(void)
 			result += i;
 		i++;
 	}
-
+	
 	printf("%d", result);
+
+	return (result);
 }
