@@ -9,7 +9,9 @@
 
 void print_times_table(int n)
 {
-	int line; int column; int num;
+	int line;
+	int column;
+	int num;
 
 	num = 0;
 	for (line = 0; line <= n; line++)
@@ -18,9 +20,8 @@ void print_times_table(int n)
 			break;
 		for (column = 0; column <= n; column++)
 		{
-			int num_result;
+			int num_result = num * column;
 
-			num_result = num * column;
 			if (num_result > 9 && num_result < 100)
 			{
 				_putchar(',');
