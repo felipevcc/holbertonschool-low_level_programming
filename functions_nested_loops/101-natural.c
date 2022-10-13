@@ -6,10 +6,10 @@
  * Return: result
  */
 
-int main(void)
+void main(void)
 {
-	int result = 0;
-	int i = 0;
+	int result;
+	int i;
 	
 	while (i < 1024)
 	{
@@ -18,5 +18,5 @@ int main(void)
 		i++;
 	}
 
-	return (result);
+	printf("%d", result);
 }
