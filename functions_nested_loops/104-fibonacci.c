@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long n1 = 1;
-	long n2 = 2;
-	long last_n;
+	unsigned long n1 = 1;
+	unsigned long n2 = 2;
+	unsigned long last_n;
 	int i;
 
 	printf("%ld, %ld, ", n1, n2);
