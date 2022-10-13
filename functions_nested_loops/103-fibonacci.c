@@ -19,7 +19,6 @@ int main(void)
 		last_n = n1 + n2;
 		if (last_n % 2 == 0)
 		{
-			
 			sum += last_n;	
 		}
 		n1 = n2;
