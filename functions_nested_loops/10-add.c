@@ -20,7 +20,7 @@ int add(int n1, int n2)
 	{
 		printf("add = %d", add);
 		add = add / 10;	
-		counter++;
+		counter = counter + 1;
 	}
 	
 	ex = n1 + n2;
