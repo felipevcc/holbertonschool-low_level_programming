@@ -13,7 +13,7 @@ int main(void)
 	long last_n;
 	int i;
 
-	printf("%d, %d, ", n1, n2);
+	printf("%ld, %ld, ", n1, n2);
 
 	while (i < 48)
 	{
@@ -21,9 +21,9 @@ int main(void)
 		n1 = n2;
 		n2 = last_n;
 		if (i != 47)
-			printf("%d, ", last_n);
+			printf("%ld, ", last_n);
 		else
-			printf("%d\n", last_n);
+			printf("%ld\n", last_n);
 		i++;
 	}
 
