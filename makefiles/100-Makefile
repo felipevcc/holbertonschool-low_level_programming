@@ -1,13 +1,13 @@
 # Make
 # Make clean
 
-.PHONY = all clean oclean fclean re
-
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
+
+.PHONY = all clean oclean fclean re
 
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
