@@ -1,7 +1,7 @@
 # Make
 # Make clean
 
-.PHONY = all clean oclean fclean
+.PHONY = all clean oclean fclean re
 
 CC = gcc
 SRC = main.c school.c
