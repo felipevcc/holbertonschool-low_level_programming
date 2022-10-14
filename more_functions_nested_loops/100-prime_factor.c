@@ -11,6 +11,7 @@ int main(void)
 	unsigned long i;
 	unsigned long n = 612852475143;
 	unsigned long prime = 0;
+	unsigned long last;
 
 	for (i = 0; i <= n; i++)
 	{
