@@ -21,5 +21,9 @@ void print_number(int n)
 	{
 		_putchar('-');
 	}
-	_putchar((n % 10) + '0');
+
+	if (n <= -1)
+		_putchar(((n * -1) % 10) + '0');
+	else
+		_putchar((n % 10) + '0');
 }
