@@ -1,16 +1,11 @@
 # Make
 # Make clean
 
-.PHONY = all
-
 CC = gcc
-SRC = $(wildcard main.c school.c)
-#OBJ = 
-#NAME = 
+SRC = $(main.c school.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
 
-
-all: school
-
-school: 
-	$(CC) $(SRC) -o school
+all: $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
 
