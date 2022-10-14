@@ -20,5 +20,5 @@ int main(void)
 		}
 	}
 
-	printf("%d\n", prime);
+	printf("%ld\n", prime);
 }
