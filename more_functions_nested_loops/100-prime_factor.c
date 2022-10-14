@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	unsigned int i;
-	unsigned int n = 612852475143;
-	unsigned int prime = 0;
+	unsigned long i;
+	unsigned long n = 612852475143;
+	unsigned long prime = 0;
 
 	for (i = 0; i <= n; i++)
 	{
