@@ -31,9 +31,9 @@ void rev_string(char *s)
 
 	for (i = _strlen(s) - 1; i >= 0; i--)
 	{
-		ch = s[i];
-		s[i] = s[j];
-		s[j] = ch;
+		ch = s[j];
+		s[j] = s[i];
+		s[i] = ch;	
 		j++;
 	}
 }
