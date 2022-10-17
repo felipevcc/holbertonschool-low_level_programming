@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * _strlen - string length
+ * _strleng - string length
  * @s: string
  * Return: result
  *
