@@ -31,6 +31,7 @@ void rev_string(char *s)
 	for (i = _strlen(s) - 1; i >= 0; i--)
 	{
 		s[j] = s[i];
+		_putchar(s[i]);
 		j++;
 	}
 }
