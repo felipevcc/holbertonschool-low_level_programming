@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * _strlen - string length
+ * @s: string
+ * Return: length string, result
+ *
  * print_rev - prints a string in reverse
  * @s: string
  *
