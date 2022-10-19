@@ -11,7 +11,6 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int len = 0, j = 0;
 	int i;
-	int lines;
 
 	while (dest[len] != '\0')
 		len++;
