@@ -16,14 +16,9 @@ char *_strncpy(char *dest, char *src, int n)
 	while (dest[len] != '\0')
 		len++;
 
-	for (lines = 0; lines <= n; lines++)
+	for (i = len; src[j] != '\0';  i++, j++)
 	{
-		for (i = len; src[j] != '\0'; i++, j++)
-		{
-			dest[i] = src[j];
-		}
-		dest[i] = '\n';
-		j = 0;
+		dest[i] = src[j];
 	}
 
 	return (dest);
