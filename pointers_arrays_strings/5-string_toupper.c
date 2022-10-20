@@ -9,11 +9,12 @@
 char *string_toupper(char *s)
 {
 	const int UPPERCASE = 32;
-	int i = 0;	
+	int i = 0;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		s[i] = s[i] - UPPERCASE;
+		if (s[i] >= 'a' && str[i] <= 'z')
+			s[i] -= UPPERCASE;
 		i++;
 	}
 
