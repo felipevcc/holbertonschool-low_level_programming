@@ -22,7 +22,7 @@ char *cap_string(char *str)
 
 		while (separators[sep_index])
 		{	
-			if (str[i] == separators[sep_index])
+			if (str[i] == separators[sep_index] && upper == 0)
 				upper = 1;
 			else if (upper == 1 && str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{
