@@ -16,7 +16,9 @@ char *cap_string(char *str)
 	{
 		while (separators[sep_index])
 		{
-		if (str[i] == separators[i] && str[i + 1] >= 'a' && str[i + 1] <= 'z')
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= UPPERCASE;
+		else if (str[i] == separators[i] && str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			str[i + 1] -= UPPERCASE;
 		sep_index++;
 		}
