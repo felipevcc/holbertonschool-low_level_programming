@@ -10,7 +10,9 @@ char *cap_string(char *str)
 {
 	const int UPPERCASE = 32;
 	int i = 0, sep_index = 0;
-	char ch = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char chs[12]; 
+	
+	chs = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	while (str[i])
 	{
@@ -23,7 +25,7 @@ char *cap_string(char *str)
 
 		for (sep_index = 0; sep_index <= 12; sep_index++)
 		{
-			if (str[i - 1] == ch[sep_index] && str[i] >= 'a' && str[i] <= 'z')
+			if (str[i - 1] == chs[sep_index] && str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] -= UPPERCASE;
 				break;
