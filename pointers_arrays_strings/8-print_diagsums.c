@@ -21,5 +21,5 @@ void print_diagsums(int *a, int size)
 		rsum += a[(j * size) + (size - 1 - j)];
 	}
 
-	printf("%ld, %ld\n", lsum, rsum);
+	printf("%i, %i\n", lsum, rsum);
 }
