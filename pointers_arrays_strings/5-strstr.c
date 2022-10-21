@@ -23,11 +23,13 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 			else if (haystack[i] == needle[j])
+			{
 				j++;
 				if (sub == 0)
 					sub++;
 					index = i;	
-				break;	
+				break;
+			}
 		}
 		i++;
 	}	
