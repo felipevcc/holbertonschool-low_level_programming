@@ -36,6 +36,8 @@ char *_strstr(char *haystack, char *needle)
 	if (sub == 0)
 		return (haystack);
 	else
+	{
 		index -= j - 1;
 		return (haystack + index);
+	}
 }
