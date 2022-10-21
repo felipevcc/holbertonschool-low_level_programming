@@ -26,8 +26,10 @@ char *_strstr(char *haystack, char *needle)
 			{
 				j++;
 				if (sub == 0)
+				{
 					sub++;
-					index = i;	
+					index = i;
+				}
 				break;
 			}
 		}
