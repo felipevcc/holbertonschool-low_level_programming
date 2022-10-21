@@ -17,8 +17,10 @@ unsigned int _strspn(char *s, char *accept)
 		while (accept[j])
 		{
 			if (s[i] == accept[j])
+			{
 				bytes++;
 				break;
+			}
 			j++;
 		}
 		if (accept[j] == '\0')
