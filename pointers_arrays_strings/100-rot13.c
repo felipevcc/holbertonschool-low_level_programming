@@ -8,18 +8,17 @@
 
 char *rot13(char *str)
 {
-	int i = 0, j = 0;
+	int i = 0
+	int j;
 	char chs[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (str[i])
 	{
-		j = 0;
-		while (chs[j])
+		for (j = 0; chs[j]; j++)
 		{
 			if (str[i] == chs[j])
 				str[i] = rot[j]; 
-			j++;
 		}
 		i++;
 	}
