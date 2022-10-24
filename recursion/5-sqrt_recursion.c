@@ -13,7 +13,7 @@ int root_recursion(int n, int i)
 		return (i);
 	else if (i > n)
 		return (-1);
-	root_recursion(n, i + 1);
+	return (root_recursion(n, i + 1));
 }
 
 /**
