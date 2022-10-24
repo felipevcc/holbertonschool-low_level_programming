@@ -14,7 +14,9 @@ int root_recursion(int n, int i)
 	else if (i > n)
 		return (-1);
 	else
+	{
 		root_recursion(n, i + 1);
+	}
 }
 
 /**
