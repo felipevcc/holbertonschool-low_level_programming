@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * root_recursion - returns the root of a number
@@ -30,23 +29,4 @@ int _sqrt_recursion(int n)
 		return (-1);
 	else
 		return (root_recursion(n, 1));
-}
-
-int main(void)
-{
-	int r;
-
-	r = _sqrt_recursion(1);
-	printf("%d\n", r);
-	r = _sqrt_recursion(1024);
-	printf("%d\n", r);
-	r = _sqrt_recursion(16);
-	printf("%d\n", r);
-	r = _sqrt_recursion(17);
-	printf("%d\n", r);
-	r = _sqrt_recursion(25);
-	printf("%d\n", r);
-	r = _sqrt_recursion(-1);
-	printf("%d\n", r);
-	return (0);
 }
