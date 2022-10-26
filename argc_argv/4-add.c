@@ -5,7 +5,7 @@
  * main - multiplies two numbers
  * @argc: args num
  * @argv: array
- * Return: 0
+ * Return: 0 or 1
  */
 
 int main(__attribute__((unused)) int argc, char *argv[])
