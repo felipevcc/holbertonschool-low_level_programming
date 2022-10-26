@@ -24,7 +24,7 @@ int main(__attribute__((unused)) int argc, char *argv[])
 			}
 		}
 		if (atoi(argv[i]))
-			counter += atoi(argv[i]);	
+			counter += atoi(argv[i]);
 	}
 	printf("%i\n", counter);
 	return (0);
