@@ -31,7 +31,9 @@ int main(int argc, char *argv[])
 	for (i = 0; coins[i] != '\0'; i++)
 	{
 		if (coins[i] > total)
-			 continue;
+		{
+			continue;
+		}
 
 		while (coins[i] <= total)
 		{
