@@ -27,7 +27,6 @@ int aux_palindrome(char *s, int len, int i)
 
 int is_palindrome(char *s)
 {
-	char rev_str[] = {};
 	int len = 0, i = 0;
 
 	while (s[len] != '\0')
