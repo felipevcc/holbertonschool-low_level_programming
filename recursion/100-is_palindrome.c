@@ -15,8 +15,7 @@ int aux_palindrome(char *s, int len, int i)
 		return (1);
 	else if (s[i] != s[len - i])
 		return (0);
-	else
-		aux_palindrome(s, len, i + 1);
+	return (aux_palindrome(s, len, i + 1));
 }
 
 /**
