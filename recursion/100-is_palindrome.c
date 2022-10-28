@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * aux_palindrome - check palindrome
@@ -26,10 +27,7 @@ int aux_palindrome(char *s, int len, int i)
 
 int is_palindrome(char *s)
 {
-	int len = 0, i = 0;
+	int len = strlen(s);
 
-	while (s[len] != '\0')
-		len++;
-
-	return (aux_palindrome(s, len - 1, i));
+	return (aux_palindrome(s, len - 1, 0));
 }
