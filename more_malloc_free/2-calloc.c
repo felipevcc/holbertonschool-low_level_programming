@@ -25,5 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	for (i = 0; i < nmemb; i++)
 		ar[i] = 0;
 
+	printf("\nsizeof = %d\n", sizeof(char))
+
 	return (ar);
 }
