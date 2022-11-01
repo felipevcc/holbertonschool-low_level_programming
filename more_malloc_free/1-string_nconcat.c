@@ -26,15 +26,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[len_s2] != '\0')
 		len_s2++;
 
-	ar = malloc(len_s1 + len_s2 + 1);
+	if (n > len_s2)
+		ar = malloc(len_s1 + len_s2);
+	else
+		ar = malloc(len_s1 + n);
+
 	if (ar == NULL)
 		return (NULL);	
 
 	for (i = 0; i < len_s1; i++)
 		ar[i] = s1[i];
-
-	if (n > len_s2)
-		n = len_s2 + 1;
 
 	for (j = 0; j <= n; j++, i++)
 		ar[i] = s2[j];
