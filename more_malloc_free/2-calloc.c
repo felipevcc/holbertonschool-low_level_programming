@@ -22,10 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ar == NULL)
 		ar = NULL;
 
-	for (i = 0; i < nmemb; i++)
-		ar[i] = 0;
-
-	printf("\nsizeof = %d\n", sizeof(char))
+	for (i = 0; i < nmemb * size; i++)
+		ar[i] = 0;	
 
 	return (ar);
 }
