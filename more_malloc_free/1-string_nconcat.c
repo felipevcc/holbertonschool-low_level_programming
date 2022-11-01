@@ -7,6 +7,7 @@
  * @s1: string 1
  * @s2: string 2
  * @n: max size
+ * Return: ar pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -31,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ar = malloc(len_s1 + n + 1);
 
 	if (ar == NULL)
-		return (NULL);	
+		return (NULL);
 
 	for (i = 0; i < len_s1; i++)
 		ar[i] = s1[i];
