@@ -6,7 +6,7 @@
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
- * 
+ *
  * Description: basic information about a dog
  */
 
