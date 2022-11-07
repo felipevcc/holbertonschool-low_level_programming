@@ -10,7 +10,7 @@
  * Description: basic information about a dog
  */
 
-typedef struct dog dog_t
+typedef struct dog dog_t;
 struct dog
 {
 	char *name;
