@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - main function, connect everything
+ * @argc: args num
+ * @argv: chars array
+ * Return: 0
+ */
+
 int main(int argc, char *argv[])
 {
 	int n1 = atoi(argv[1]), n2 = atoi(argv[3]);
@@ -14,9 +21,9 @@ int main(int argc, char *argv[])
 	}
 
 	op_func = get_op_func(argv[2]);
-	
+
 	if (op_func != NULL)
-		return (op_func(n1, n2));
+		printf("%i\n", op_func(n1, n2));
 	else
 	{
 		printf("Error\n");
@@ -24,4 +31,4 @@ int main(int argc, char *argv[])
 	}
 
 	return (0);
-}	
+}
