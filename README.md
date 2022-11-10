@@ -21,4 +21,4 @@ Repository with several projects and programming exercises in C language carried
 * [C - Variadic functions](./variadic_functions)
 
 ## Author
-* Felipe Villamizar [GitHub](https://github.com/felipevcc)
+* Felipe Villamizar - [GitHub](https://github.com/felipevcc)

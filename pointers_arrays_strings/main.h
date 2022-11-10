@@ -4,7 +4,7 @@
 /* _putchar function */
 int _putchar(char c);
 
-/* Pointers, arrays and strings */
+/* 1. Pointers, arrays and strings */
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -16,7 +16,7 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
-/* More pointers, arrays and strings */
+/* 2. More pointers, arrays and strings */
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -27,7 +27,7 @@ char *cap_string(char *);
 char *leet(char *);
 char *rot13(char *);
 
-/* Even more pointers, arrays and strings */
+/* 3. Even more pointers, arrays and strings */
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);

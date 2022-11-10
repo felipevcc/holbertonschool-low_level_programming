@@ -2,7 +2,7 @@
 
 ## Description
 
-* [`tests/`](./tests) - Main functions for testing files provided by Holberton School.
+* [`tests/`](./tests) - Main functions provided by Holberton School to test the files.
 * [`function_pointers.h`](./function_pointers.h) - Header file with function prototypes.
 
 ## Tasks
@@ -19,3 +19,6 @@
     * [`3-get_op_func.c`](./3-get_op_func.c) - Function that checks the operator sign and returns the corresponding function.
     * [`3-op_functions.c`](./3-op_functions.c) - Contains all the operation functions that return the result.
     * [`3-calc.h`](./3-calc.h) - Header file with function prototypes and a structure.
+
+## Author
+* Felipe Villamizar - [GitHub](https://github.com/felipevcc)
