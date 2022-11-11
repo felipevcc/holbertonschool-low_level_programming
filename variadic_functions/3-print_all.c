@@ -20,12 +20,12 @@ void print_float(va_list list)
 
 void print_string(va_list list)
 {
-	/*
+	
 	char *nil = va_arg(list, char *);
 
 	if (nil == NULL)
 		nil = "(nil)"; 
-	printf("%s", nil);*/
+	/*printf("%s", nil);*/
 	printf("hola");
 }
 
