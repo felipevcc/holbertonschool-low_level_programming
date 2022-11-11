@@ -6,6 +6,7 @@
 * [`tests2/`](./tests) - Main functions provided by Holberton School to test the files of section 2.
 * [`tests3/`](./tests) - Main functions provided by Holberton School to test the files of section 3.
 * [`main.h`](./main.h) - Header file with function prototypes.
+* [`_putchar.c`](./_putchar.c) - Function that writes a character to stdout.
 
 ## Tasks
 
