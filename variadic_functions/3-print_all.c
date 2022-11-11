@@ -2,29 +2,43 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-
+/**
+ * print_char - prints the char
+ * @list: args
+ */
 void print_char(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
 
+/**
+ * print_int - prints the integer
+ * @list: args
+ */
 void print_int(va_list list)
 {
 	printf("%i", va_arg(list, int));
 }
 
+/**
+ * print_float - prints the float
+ * @list: args
+ */
 void print_float(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
 
+/**
+ * print_string - prints the string
+ * @list: args
+ */
 void print_string(va_list list)
 {
-	
 	char *nil = va_arg(list, char *);
 
 	if (nil == NULL)
-		nil = "(nil)"; 
+		nil = "(nil)";
 	printf("%s", nil);
 }
 
@@ -32,9 +46,8 @@ void print_string(va_list list)
  * print_all - prints anything
  * @format: list of argument types
  */
-
 void print_all(const char * const format, ...)
-{	
+{
 	va_list args;
 	int i = 0;
 	int j;
@@ -45,12 +58,12 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string},
 		{NULL, NULL}
-	};	
+	};
 
 	va_start(args, format);
 
 	while (format && format[i])
-	{	
+	{
 		j = 0;
 		while (types[j].t)
 		{
@@ -63,7 +76,7 @@ void print_all(const char * const format, ...)
 			j++;
 		}
 		i++;
-	}	
+	}
 	printf("\n");
 	va_end(args);
 }

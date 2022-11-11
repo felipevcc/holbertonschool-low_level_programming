@@ -1,8 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-#include <stdarg.h>
-
 /**
  * struct type - struct type
  * @t: var type
