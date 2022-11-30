@@ -19,6 +19,9 @@ Repository with several projects and programming exercises in C language carried
 * [C - Structures, typedef](./structures_typedef)
 * [C - Function pointers](./function_pointers)
 * [C - Variadic functions](./variadic_functions)
+* [C - Singly linked lists](./singly_linked_lists)
+* [C - More singly linked lists](./more_singly_linked_lists)
+* [C - Bit manipulation](./bit_manipulation)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
