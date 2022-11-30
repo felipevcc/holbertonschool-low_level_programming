@@ -17,6 +17,8 @@
   * [`3-add_node_end.c`](./3-add_node_end.c) - Function that adds a new node at the end of a list.
 * **4. Free list**
   * [`4-free_list.c`](./4-free_list.c) - Function that frees a list.
+* **5. The Hare and the Tortoise**
+  * [`100-first.c`](./100-first.c) - Function that prints a string before the `main` is executed.
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
