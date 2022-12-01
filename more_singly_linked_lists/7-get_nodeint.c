@@ -1,6 +1,24 @@
 #include "lists.h"
 
 /**
+ * list_len - returns the number of elements in a linked list
+ * @h: struct
+ * Return: unsigned int
+ */
+
+unsigned int list_len(listint_t *h)
+{
+	unsigned int i = 0;
+
+	while (h)
+	{
+		i++;
+		h = (*h).next;
+	}
+	return (i);
+}
+
+/**
  * *get_nodeint_at_index - returns the nth node of a linked list
  * @head: head of the structure
  * @index: index of the node
@@ -10,13 +28,12 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
-	listint_t *aux = head;
 
-	if (!head)
+	if (!head || index > list_len(head))
 		return (NULL);
 
-	for (i = 0; i < index && aux->n; i++)
-		aux = aux->next;
+	for (i = 0; i < index; i++)
+		head = head->next;
 
-	return (aux);
+	return (head);
 }
