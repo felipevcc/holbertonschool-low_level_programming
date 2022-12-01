@@ -7,9 +7,9 @@
 
 void free_listint2(listint_t **head)
 {
-	if (!head)
+	if (!(*head))
 		return;
 
-	free_listint2(&head->next);
+	free_listint2(&(*head).next);
 	free(head);
 }
