@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * *add_node - adds a new node at the beginning of a 'list_t' list
+ * *add_nodeint - adds a new node at the beginning of a 'list_t' list
  * @head: struct
- * @str: string
+ * @n: number
  * Return: int
  */
 
