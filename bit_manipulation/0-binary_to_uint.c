@@ -9,7 +9,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int bin_max_idx = strlen(b) - 1, multiplier = 1
+	int bin_max_idx = strlen(b) - 1, multiplier = 1;
 	unsigned int converted_int = 0;
 
 	if (!b)
