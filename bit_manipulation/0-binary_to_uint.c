@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (bin_max_idx >= 0)
 	{
-		if (b[bin_max_idx] != 0 && b[bin_max_idx] != 1)
+		if (b[bin_max_idx] != '0' && b[bin_max_idx] != '1')
 			return (0);
 
 		converted_int += multiplier * (b[bin_max_idx] - '0');
