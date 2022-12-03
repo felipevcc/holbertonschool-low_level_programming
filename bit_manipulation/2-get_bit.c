@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bin - returns the value of a bit at a given index
+ * get_bit - returns the value of a bit at a given index
  * @n: number
  * @index: index var
  * Return: value of the bit at index or -1 if an error occured
