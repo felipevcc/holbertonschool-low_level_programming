@@ -1,4 +1,4 @@
-# C - More singly linked lists
+# C - Doubly linked lists
 
 ## Description
 
