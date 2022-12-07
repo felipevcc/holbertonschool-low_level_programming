@@ -3,7 +3,7 @@
 ## Description
 
 * [`tests/`](./tests) - Main functions provided by Holberton School to test the files.
-* [`main.h`](./lists.h) - Header file with function prototypes and with structures.
+* [`main.h`](./main.h) - Header file with function prototypes and with structures.
 
 ## Tasks
 

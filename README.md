@@ -22,6 +22,9 @@ Repository with several projects and programming exercises in C language carried
 * [C - Singly linked lists](./singly_linked_lists)
 * [C - More singly linked lists](./more_singly_linked_lists)
 * [C - Bit manipulation](./bit_manipulation)
+* [C - File I/O](./file_io)
+* [C - Doubly linked lists](./doubly_linked_lists)
+* [C - Hash tables](./hash_tables)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
