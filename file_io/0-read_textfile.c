@@ -9,7 +9,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, vread, vwrite;
+	int fd, read_fd, write_out;
 	char *buff;
 
 	if (!filename || !letters)
@@ -23,16 +23,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!fd)
 		return (0);
 
-	vread = read(fd, buff, letters);
-	printf("%d", vread);
-	if (!vread)
+	read_fd = read(fd, buff, letters);
+	if (!read_fd)
 		return (0);
 
-	vwrite = write(STDOUT_FILENO, buff, letters);
-	if (!vwrite)
+	write_out = write(STDOUT_FILENO, buff, letters);
+	if (!write_out)
 		return (0);
 
 	close(fd);
 	free(buff);
-	return (vread);
+	return (read_fd);
 }
