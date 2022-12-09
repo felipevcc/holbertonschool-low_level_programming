@@ -24,6 +24,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		i++;
 	}
 
+	if (!node_removed)
+		return (-1);
+
 	if (node_removed->next)
 		node_removed->next->prev = node_removed->prev;
 
