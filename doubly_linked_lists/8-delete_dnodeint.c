@@ -1,24 +1,6 @@
 #include "lists.h"
 
 /**
- * list_len - returns the number of elements in a linked list
- * @h: struct
- * Return: unsigned int
- */
-
-unsigned int list_len(dlistint_t *h)
-{
-	unsigned int i = 0;
-
-	while (h)
-	{
-		i++;
-		h = (*h).next;
-	}
-	return (i);
-}
-
-/**
  * delete_dnodeint_at_index - deletes the node at index of a linked list
  * @head: head of the structure
  * @index: index of the node that should be deleted
@@ -27,29 +9,27 @@ unsigned int list_len(dlistint_t *h)
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *out, *node_removed;
+	dlistint_t *node_removed = *head;
 	unsigned int i = 0;
 
-	if (!*head || index > list_len(*head))
+	if (!*head)
 		return (-1);
 
-	out = *head;
-
 	if (index == 0)
-	{
-		*head = (*head)->next;
-		free(out);
-		return (1);
-	}
+		*head = node_removed->next;
 
-	while (i < index - 1)
+	while (i < index && node_removed)
 	{
-		out = out->next;
+		node_removed = node_removed->next;
 		i++;
 	}
-	node_removed = out->next;
-	out->next = node_removed->next;
-	free(node_removed);
 
+	if (node_removed->next)
+		node_removed->next->prev = node_removed->prev;
+
+	if (node_removed->prev)
+		node_removed->prev->next = node_removed->next;
+
+	free(node_removed);
 	return (1);
 }
