@@ -1,4 +1,23 @@
 #include "lists.h"
+#include <string.h>
+
+/**
+ * list_len - returns the number of elements in a linked list
+ * @h: struct
+ * Return: unsigned int
+ */
+
+unsigned int list_len(dlistint_t *h)
+{
+	unsigned int i = 0;
+
+	while (h)
+	{
+		i++;
+		h = (*h).next;
+	}
+	return (i);
+}
 
 /**
  * *insert_dnodeint_at_index - inserts a new node at a given position
@@ -16,6 +35,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!*h)
 		return (NULL);
 
+	if (idx > list_len(*h))
+		return (NULL);
+
 	node_current = *h;
 
 	while (i < idx && node_current)
@@ -24,13 +46,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i++;
 	}
 
-	if (!node_current)
-		return (NULL);
-
 	new_node = malloc(sizeof(dlistint_t));
 	if (!new_node)
 		return (NULL);
-	
+
 	new_node->n = n;
 	new_node->prev = node_current->prev;
 	new_node->next = node_current;
