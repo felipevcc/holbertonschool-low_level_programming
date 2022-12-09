@@ -23,11 +23,11 @@ int main(int argc, char **argv)
 
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
-		error_cases(98, NULL, file_from, 0);
+		error_cases(98, NULL, argv[1], 0);
 
 	fd_to = open(file_to, O_CREAT | O_RDWR | O_TRUNC, 0664);
 	if (fd_to == -1)
-		error_cases(99, file_from, file_to, 0);
+		error_cases(99, fd_from, argv[2], 0);
 
 	for (i = 0; i < 1024; i++)
 		buff[i] = '\0';
