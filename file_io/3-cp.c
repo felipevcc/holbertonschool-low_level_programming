@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 	char buff[1024];
 
 	if (argc != 3)
-		error_cases(97, NULL, NULL, 0);
+		error_cases(97, NULL, 0);
 
 	file_from = argv[1];
 	file_to = argv[2];
