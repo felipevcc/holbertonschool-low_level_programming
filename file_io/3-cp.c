@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
 		error_cases(98, file_from, 0);
-	fd_to = open(file_to, O_CREAT | O_RDWR | O_TRUNC, 0664);
+	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		close(fd_from);
@@ -62,7 +62,6 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < 1024; i++)
 		buff[i] = '\0';
-
 	while (bytes_read)
 	{
 		bytes_read = read(fd_from, buff, 1024);
