@@ -1,15 +1,13 @@
 #include "main.h"
 
-
 /**
  * error_cases - handling errors according to their states
  * @error_status: status
- * @closef: close file
  * @file: file
  * @fd: file descriptor
  */
 
-void error_cases(int error_status, char *closef, char *file, int fd)
+void error_cases(int error_status, char *file, int fd)
 {
 	if (error_status == 97)
 	{
@@ -23,13 +21,12 @@ void error_cases(int error_status, char *closef, char *file, int fd)
 	}
 	else if (error_status == 99)
 	{
-		close(closef);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		exit(error_status);
 	}
 	else if (error_status == 100)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(error_status);
 	}
 }
@@ -49,18 +46,21 @@ int main(int argc, char **argv)
 	char buff[1024];
 
 	if (argc != 3)
-		error_cases(97, NULL, 0);
+		error_cases(97, NULL, NULL, 0);
 
 	file_from = argv[1];
 	file_to = argv[2];
 
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
-		error_cases(98, NULL, argv[1], 0);
+		error_cases(98, file_from, 0);
 
 	fd_to = open(file_to, O_CREAT | O_RDWR | O_TRUNC, 0664);
 	if (fd_to == -1)
-		error_cases(99, fd_from, argv[2], 0);
+	{
+		close(fd_from);
+		error_cases(99, file_to, 0);
+	}
 
 	for (i = 0; i < 1024; i++)
 		buff[i] = '\0';
@@ -73,11 +73,11 @@ int main(int argc, char **argv)
 
 	close_status = close(fd_from);
 	if (close_status == -1)
-		error_cases(100, NULL, NULL, fd_from);
+		error_cases(100, NULL, fd_from);
 
 	close_status = close(fd_to);
 	if (close_status == -1)
-		error_cases(100, NULL, NULL, fd_to);
+		error_cases(100, NULL, fd_to);
 
 	return (0);
 }
