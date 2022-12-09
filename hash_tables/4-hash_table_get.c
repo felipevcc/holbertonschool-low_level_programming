@@ -3,7 +3,7 @@
 /**
  * hash_table_get - retrieves a value associated with a key
  * @ht: hash table you want to look into
- * @key key you are looking for
+ * @key: key you are looking for
  * Return: value associated with the key or NULL
  */
 
@@ -17,6 +17,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	index = key_index((const unsigned char *)key, ht->size);
 	node = ht->array[index];
-
-	return (node->value);
+	while (node)
+	{
+		if (strcmp(key, node->key) == 0)
+			return (node->value); /* found key */
+		node = node->next;
+	}
+	return (NULL);
 }
