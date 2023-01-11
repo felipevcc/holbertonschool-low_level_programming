@@ -1,41 +1,45 @@
 #include "search_algos.h"
 
 /**
- * jump_search - function searches for a value in a sorted array of integers
- * @array: variable int
- * @size: variable size
- * @value: variable int
- * Return: int
+ * jump_search - searches for a value in a sorted array of integers
+ * @array: array of integers
+ * @size: array size
+ * @value: value to search
+ * Return: index or -1 (int)
  */
 
 int jump_search(int *array, size_t size, int value)
 {
 	size_t step = sqrt(size);
-	size_t prev = 0;
+	/* indexes of the current range */
+	size_t idx_low = 0;
+	size_t idx_high = step;
 
 	if (!array)
 		return (-1);
 
-	while (array[step] < value)
+	/* iterate array with "step var" as the jump step */
+	while (idx_high < size && array[idx_high] < value)
 	{
-		if (step >= size)
-			break;
-		printf("Value checked array[%lu] = [%i]\n", prev, array[prev]);
-		prev = step;
-		step += sqrt(size);
+		printf("Value checked array[%lu] = [%i]\n", idx_low, array[idx_low]);
+		idx_low = idx_high;
+		idx_high += step;
 	}
-	printf("Value checked array[%lu] = [%i]\n", prev, array[prev]);
-	printf("Value found between indexes [%lu] and [%lu]\n", prev, step);
+	printf("Value checked array[%lu] = [%i]\n", idx_low, array[idx_low]);
+	printf("Value found between indexes [%lu] and [%lu]\n", idx_low, idx_high);
 
-	while (prev < size && array[prev] < value)
+	/* iterate the found range */
+	while (idx_low < size && array[idx_low] < value)
 	{
-		printf("Value checked array[%lu] = [%i]\n", prev, array[prev]);
-		prev++;
+		printf("Value checked array[%lu] = [%i]\n", idx_low, array[idx_low]);
+		idx_low++;
 	}
-	if (array[prev] == value)
+
+	/* if value is found*/
+	if (idx_low < size && array[idx_low] == value)
 	{
-		printf("Value checked array[%lu] = [%i]\n", prev, array[prev]);
-		return (prev);
+		printf("Value checked array[%lu] = [%i]\n", idx_low, array[idx_low]);
+		return (idx_low);
 	}
 	return (-1);
 }
