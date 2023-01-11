@@ -35,9 +35,9 @@
   }
 ```
 * **7. Jump search**
-  * [`100-jump.c`](./100-jump.c) - Function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search)
+  * [`100-jump.c`](./100-jump.c) - Function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search).
 * **8. Big O #5**
-  * [`101-O`](./101-O) - Time complexity (average case) of a jump search in an array of size n, using `step = sqrt(n)`
+  * [`101-O`](./101-O) - Time complexity (average case) of a jump search in an array of size n, using `step = sqrt(n)`.
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
