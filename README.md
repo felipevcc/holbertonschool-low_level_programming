@@ -25,6 +25,7 @@ Repository with several projects and programming exercises in C language carried
 * [C - File I/O](./file_io)
 * [C - Doubly linked lists](./doubly_linked_lists)
 * [C - Hash tables](./hash_tables)
+* [C - Search Algorithms](./search_algorithms)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
